@@ -1,13 +1,13 @@
 # UHD Wallpapers
  
 
-This an android application show cases different sets of images from unsplash and allows its users to download and set them as wallpapers.
+* This an android application show cases different sets of images from unsplash and allows its users to download and set them as wallpapers.
 ## Features
 
 #### [Splash Screen](app/src/main/java/com/anorlddroid/wallpapers4e/SplashScreenActivity.kt)
 
 #### [Onboarding Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/onboarding/)
-The onboarding screen allows users to customize their experience by selecting  categories of images.
+* The onboarding screen allows users to customize their experience by selecting  categories of images.
 
 #### [Home Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/)
 * The home screen has three tabs, namely: [Categories](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Categories.kt) that displays the categories the user chose on onboarding screen, [Recent](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Recent.kt) displays recent images and [Random](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Random.kt) displays random images.
@@ -18,8 +18,8 @@ The onboarding screen allows users to customize their experience by selecting  c
 Displays details of a selected image, featuring:
 
 * A share icon image at the top right corner of the top bar for sharing the image with your loved ones.
-* A DownloadButton that can be clicked  to download the image.
-* A setWallpaper button that displays a menu to choose where you want the wallpaper set.
+* A download Button that can be clicked  to download the image.
+* A set wallpaper button that displays a menu to choose where you want the wallpaper set.
 * A more button that displays the description and creation date of the image
 * 
 ## Screenshots
@@ -34,7 +34,7 @@ Displays details of a selected image, featuring:
 </p>
 
 ## Data
-Imagery is sourced from [Unsplash](https://unsplash.com/)  and loaded using [glideimage][coil-accompanist] from [landscapist](https://github.com/skydoves/landscapist).
+Imagery is sourced from [Unsplash](https://unsplash.com/)  and loaded using glide-image from [landscapist](https://github.com/skydoves/landscapist).
 
 
 ## How To Use 
