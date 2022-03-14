@@ -51,7 +51,7 @@ $ git clone https://github.com/anorld-droid/UHD-Wallpapers.git
 $ cd UHD-Wallpapers
 
 #If you have added android studio to your environment path 
-$ JAVA_OPTS="-Xmx4g" studio64 .
+$ studio64 .
 
 #if not then open your android studio and import the project
 ```
