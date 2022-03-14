@@ -1,16 +1,13 @@
-<h1 align="center">
-  <br>
-  <img src="app-screenshots/icon.png" height="200"/>
-  <br>
-  UHD Wallpapers
-  <br>
-</h1>
+# UHD Wallpapers
+ 
 
-This an android application  show cases different sets of images from unsplash and allows its users to download and set them as wallpapers.
+This an android application show cases different sets of images from unsplash and allows its users to download and set them as wallpapers.
 ## Features
-#### Splash
 
-<img src="app-screenshots/splash_screen"/>
+#### [Splash Screen](app/src/main/java/com/anorlddroid/wallpapers4e/SplashScreenActivity.kt)
+* [background](app/src/main/res/drawable/splash_screen_background.xml)
+
+<img src="app-screenshots/splash_screen.jpg" width="250" height="400"/>
 
 #### [Onboarding Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/onboarding/)
 The onboarding screen allows users to customize their experience by selecting  categories of images.
@@ -76,8 +73,6 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -87,10 +82,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-##Technologies used
-[Android Studio Bumblebee | 2021.1.1]:  https://developer.android.com/studio
-[Jetpack Compose]: https://developer.android.com/jetpack/compose
-[Retrofit]: https://square.github.io/retrofit/
-[Accompanist]: https://google.github.io/accompanist/
-[Landscapist]: https://github.com/skydoves/landscapist
+## Technologies used
+* [Android Studio Bumblebee | 2021.1.1](https://developer.android.com/studio)
+* [Jetpack Compose](https://developer.android.com/jetpack/compose)
+* [Retrofit](https://square.github.io/retrofit/)
+* [Accompanist]( https://google.github.io/accompanist/)
+* [Landscapist](https://github.com/skydoves/landscapist)
 
