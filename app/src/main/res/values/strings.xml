@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ultra HD Wallpapers</string>
+    <string name="done">Done</string>
+    <string name="choose_categories_that_interest_you">Choose at least 4 categories that interest you</string>
+    <string name="search_no_matches">Your search  for “%1s” could not be found</string>
+    <string name="search_no_matches_retry">Make sure that all keywords are spelled correctly.\nTry more general keywords.</string>
+    <string name="clear">Clear Search Area</string>
+    <string name="network_error">The following error has occurred while trying to connect to the network “%1s” </string>
+    <string name="label_back">Back</string>
+    <string name="back_online">Back online</string>
+    <string name="offline">No internet connection</string>
+    <string name="share_image">Share image</string>
+</resources>

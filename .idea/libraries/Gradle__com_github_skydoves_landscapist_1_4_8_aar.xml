@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.skydoves:landscapist:1.4.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ae4ecb0a9c61550d7584bb34ecb64975/transformed/jetified-landscapist-1.4.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ae4ecb0a9c61550d7584bb34ecb64975/transformed/jetified-landscapist-1.4.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ae4ecb0a9c61550d7584bb34ecb64975/transformed/jetified-landscapist-1.4.8/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/landscapist/1.4.8/da1924cb34521f95cafe3e53aa437743db96d01e/landscapist-1.4.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/landscapist/1.4.8/7fb78273c4ba2f3e763e8ad2ecdc8760e350576/landscapist-1.4.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

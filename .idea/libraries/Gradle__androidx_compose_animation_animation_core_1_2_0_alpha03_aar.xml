@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.compose.animation:animation-core:1.2.0-alpha03@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/50f6dd69d570fd4f780dc8030c9e961a/transformed/jetified-animation-core-1.2.0-alpha03/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/50f6dd69d570fd4f780dc8030c9e961a/transformed/jetified-animation-core-1.2.0-alpha03/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/50f6dd69d570fd4f780dc8030c9e961a/transformed/jetified-animation-core-1.2.0-alpha03/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.animation/animation-core/1.2.0-alpha03/311384acdff58bf38876444b3e1f3505aab2cda8/animation-core-1.2.0-alpha03-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
