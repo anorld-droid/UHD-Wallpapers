@@ -5,27 +5,14 @@ This an android application show cases different sets of images from unsplash an
 ## Features
 
 #### [Splash Screen](app/src/main/java/com/anorlddroid/wallpapers4e/SplashScreenActivity.kt)
-* [background](app/src/main/res/drawable/splash_screen_background.xml)
-
-<img src="app-screenshots/splash_screen.jpg" width="250" height="400"/>
 
 #### [Onboarding Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/onboarding/)
 The onboarding screen allows users to customize their experience by selecting  categories of images.
 
-<img src="app-screenshots/categories_screen.jpg" width="250" height="400"/>
-
 #### [Home Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/)
 * The home screen has three tabs, namely: [Categories](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Categories.kt) that displays the categories the user chose on onboarding screen, [Recent](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Recent.kt) displays recent images and [Random](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Random.kt) displays random images.
-
-<img src="app-screenshots/Home.jpg" width="250" height="400"/>.
-
 * The top bar includes a search bar for better user experience, by default it is hidden but can be accessed using the search icon.
-
-<img src="app-screenshots/search.jpg" width="250" height="400"/>.
-
-
 * Toggle between darkmode and light mode or use system default options are included in the bottom sheet accessed across any of the three tabs, the user can also request for features or report a bug.
-<img src="app-screenshots/Darkmode.jpg" width="250" height="400"/>
 
 #### [Photo Details Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/details/)
 Displays details of a selected image, featuring:
@@ -34,8 +21,17 @@ Displays details of a selected image, featuring:
 * A DownloadButton that can be clicked  to download the image.
 * A setWallpaper button that displays a menu to choose where you want the wallpaper set.
 * A more button that displays the description and creation date of the image
-<img src="app-screenshots/Set wallpaper.jpg" width="250" height="400"/>
+* 
+## Screenshots
 
+<p>
+<img src="app-screenshots/splash_screen.jpg" width="250" height="400"/>
+<img src="app-screenshots/categories_screen.jpg" width="250" height="400"/>
+<img src="app-screenshots/Home.jpg" width="250" height="400"/>.
+<img src="app-screenshots/search.jpg" width="250" height="400"/>.
+<img src="app-screenshots/Darkmode.jpg" width="250" height="400"/>
+<img src="app-screenshots/Set wallpaper.jpg" width="250" height="400"/>
+</p>
 
 ## Data
 Imagery is sourced from [Unsplash](https://unsplash.com/)  and loaded using [glideimage][coil-accompanist] from [landscapist](https://github.com/skydoves/landscapist).
