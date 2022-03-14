@@ -1,85 +1,96 @@
-# UHD Wallpapers
 <h1 align="center">
   <br>
-  <img src="app-screenshots/icon.png"/>
+  <img src="app-screenshots/icon.png" height="200"/>
   <br>
-  Markdownify
+  UHD Wallpapers
   <br>
 </h1>
 
-This is an android application that show cases different sets of images from unsplash an allows its users to download and set them as wallpapers.
-
-To try out this app, you need to use [Android Studio Arctic Fox](https://developer.android.com/studio) +.
-You can clone this repository or fork then use following the steps:
-
-[here](https://developer.android.com/jetpack/compose/setup#sample).
-
-This sample showcases:
-
-* [Material theming][materialtheming] & light/dark themes
-* Custom layout
-* Animation
-
-## Screenshots
+This an android application  show cases different sets of images from unsplash and allows its users to download and set them as wallpapers.
+## Features
+#### Splash
 
 <img src="app-screenshots/splash_screen"/>
 
-## Features
+#### [Onboarding Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/onboarding/)
+The onboarding screen allows users to customize their experience by selecting  categories of images.
 
-#### [Onboarding Screen](app/src/main/java/com/example/owl/ui/onboarding)
-The onboarding screen allows users to customize their experience by selecting topics. Notable features:
-* Custom [staggered grid layout](app/src/main/java/com/example/owl/ui/onboarding/Onboarding.kt#L239).
-* [Topic chip](app/src/main/java/com/example/owl/ui/onboarding/Onboarding.kt#L171) with custom [selection animation](app/src/main/java/com/example/owl/ui/onboarding/Onboarding.kt#L157).
+<img src="app-screenshots/categories_screen.jpg" width="250" height="400"/>
 
-#### [Courses Screen](app/src/main/java/com/example/owl/ui/courses)
-The courses screen displays featured and saved course and a search screen. Notable fetures:
-* Custom [`StaggeredVerticalGrid`](app/src/main/java/com/example/owl/ui/courses/FeaturedCourses.kt#L161) responsive to available size.
-* [`FeaturedCourse`](app/src/main/java/com/example/owl/ui/courses/FeaturedCourses.kt#L70) composable demonstrates usage of [`ConstraintLayout`](https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/package-summary.html#ConstraintLayout(androidx.compose.ui.Modifier,%20kotlin.Function1)).
+#### [Home Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/)
+* The home screen has three tabs, namely: [Categories](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Categories.kt) that displays the categories the user chose on onboarding screen, [Recent](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Recent.kt) displays recent images and [Random](app/src/main/java/com/anorlddroid/wallpapers4e/ui/home/Random.kt) displays random images.
 
-#### [Course Details Screen](app/src/main/java/com/example/owl/ui/course/CourseDetails.kt)
-Displays details of a selected course, featuring:
+<img src="app-screenshots/Home.jpg" width="250" height="400"/>.
 
-* A [FloatingActionButton](https://material.io/components/buttons-floating-action-button) that can be clicked or dragged to transform into a [`LessonsSheet`](app/src/main/java/com/example/owl/ui/course/CourseDetails.kt#L309).
-* A selection of [`RelatedCourses`](app/src/main/java/com/example/owl/ui/course/CourseDetails.kt#L262) using a nested `BlueTheme`.
+* The top bar includes a search bar for better user experience, by default it is hidden but can be accessed using the search icon.
 
-#### [Theming](app/src/main/java/com/example/owl/ui/theme)
-Owl follows Material Design, customizing [colors](app/src/main/java/com/example/owl/ui/theme/Color.kt), [typography](app/src/main/java/com/example/owl/ui/theme/Type.kt) and [shapes](app/src/main/java/com/example/owl/ui/theme/Shape.kt). These come together in Owl's multiple [themes](app/src/main/java/com/example/owl/ui/theme/Theme.kt), one for each color scheme. Additionaly, Owl supports [image](app/src/main/java/com/example/owl/ui/theme/Images.kt) and [elevation](app/src/main/java/com/example/owl/ui/theme/Elevation.kt) theming, providing alternate images/elevations in light/dark themes.
+<img src="app-screenshots/search.jpg" width="250" height="400"/>.
 
-#### [Common UI](app/src/main/java/com/example/owl/ui/common)
-Compose makes it simple to create a library of components and use them throughout the app. See:
-* [`CourseListItem`](app/src/main/java/com/example/owl/ui/common/CourseListItem.kt) is used on both the [My Courses](app/src/main/java/com/example/owl/ui/courses/MyCourses.kt) screen and in the related section of the [Course Details](app/src/main/java/com/example/owl/ui/course/CourseDetails.kt) screen.
-* [`OutlinedAvatar`](app/src/main/java/com/example/owl/ui/common/OutlinedAvatar.kt) is used on both the [Featured Courses](app/src/main/java/com/example/owl/ui/courses/FeaturedCourses.kt) screen and the [Course Details](app/src/main/java/com/example/owl/ui/course/CourseDetails.kt) screen.
 
-#### [Utilities](app/src/main/java/com/example/owl/ui/utils/)
-Owl implements some utility functions of interest:
-* [Window insets](https://goo.gle/compose-insets) will likely be provided by the Compose library at some point. Until then this demonstrates how it can be implemented.
-* [NavGraph](app/src/main/java/com/example/owl/ui/NavGraph.kt) models navigation within the app using [Jetpack Navigation](https://developer.android.com/jetpack/compose/navigation).
+* Toggle between darkmode and light mode or use system default options are included in the bottom sheet accessed across any of the three tabs, the user can also request for features or report a bug.
+<img src="app-screenshots/Darkmode.jpg" width="250" height="400"/>
+
+#### [Photo Details Screen](app/src/main/java/com/anorlddroid/wallpapers4e/ui/details/)
+Displays details of a selected image, featuring:
+
+* A share icon image at the top right corner of the top bar for sharing the image with your loved ones.
+* A DownloadButton that can be clicked  to download the image.
+* A setWallpaper button that displays a menu to choose where you want the wallpaper set.
+* A more button that displays the description and creation date of the image
+<img src="app-screenshots/Set wallpaper.jpg" width="250" height="400"/>
+
 
 ## Data
-Domain types are modelled in the [model package](app/src/main/java/com/example/owl/model), each containing static sample data exposed using fake `Repo`s objects.
+Imagery is sourced from [Unsplash](https://unsplash.com/)  and loaded using [glideimage][coil-accompanist] from [landscapist](https://github.com/skydoves/landscapist).
 
-Imagery is sourced from [Unsplash](https://unsplash.com/) and [Pravatar](https://pravatar.cc/) and loaded using [coil-accompanist][coil-accompanist].
 
+## How To Use 
+
+To clone and run this application, you'll  need to use [Android Studio Arctic Fox](https://developer.android.com/studio) or latest.
+
+From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/anorld-droid/UHD-Wallpapers.git
+
+# Go into the repository
+$ cd UHD-Wallpapers
+
+#If you have added android studio to your environment path 
+$ JAVA_OPTS="-Xmx4g" studio64 .
+
+#if not then open your android studio and import the project
+```
 
 ## License
 ```
-Copyright 2020 The Android Open Source Project
+MIT License
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Copyright (c) 2022 anorld-droid
 
-    https://www.apache.org/licenses/LICENSE-2.0
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
-
-[compose]: https://developer.android.com/jetpack/compose
-[owl]: https://material.io/design/material-studies/owl.html
-[materialtheming]: https://material.io/design/material-theming/overview.html#material-theming
-[coil-accompanist]: https://google.github.io/accompanist/coil/
+##Technologies used
+[Android Studio Bumblebee | 2021.1.1]:  https://developer.android.com/studio
+[Jetpack Compose]: https://developer.android.com/jetpack/compose
+[Retrofit]: https://square.github.io/retrofit/
+[Accompanist]: https://google.github.io/accompanist/
+[Landscapist]: https://github.com/skydoves/landscapist
 
